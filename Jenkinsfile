@@ -77,7 +77,7 @@ pipeline {
         always {
             mail to: 'ivanruiperez.instituto@gmail.com',
             subject: "Pipeline IC: ${currentBuild.fullDisplayName}",
-            body: "${env.BUILD_URL} has result ${currentBuild.result}. Se ha creado la imagen $IMAGEN:latest."
+            body: "${env.BUILD_URL} has result ${currentBuild.result}. Si ha tenido exito, ha creado la imagen $IMAGEN:latest."
         }
     }
 }
